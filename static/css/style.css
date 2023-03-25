@@ -1,0 +1,143 @@
+*
+{
+    box-sizing: border-box;
+    padding   : 0;
+    margin    : 0;
+}
+
+body
+{
+    background: rgb(177, 187, 174);
+
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+    overflow: hidden;
+    height  : 100vh;
+    width   : 100vw;
+}
+
+.start_page
+{
+    background-image: url("../img/bg.png");
+    background-size: cover;
+
+    border: 1px solid rgb(0, 0, 0);
+
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    
+    z-index: 1;
+    left   : 0;
+    top    : 0;
+    height : 125%;
+    width  : 100%;
+}
+.start_btn_wrapper
+{
+    position: relative;
+    height  : 90px;
+    width   : 250px;
+}
+#start_btn
+{
+    background: rgb(232, 238, 230);
+
+    border       : 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+    position: absolute;
+    overflow: hidden;
+    left    : 0;
+    top     : 0;
+    height  : 100%;
+    width   : 100%;
+
+    white-space: nowrap;
+    font-size  : 132.5%;
+}
+#start_btn:hover
+{
+    background: rgb(214, 219, 212);
+}
+#start_btn:active
+{
+    background: rgb(193, 202, 190);
+}
+
+.game_wrapper
+{
+    margin-top: -100%;
+
+    position: absolute;
+    height  : 100%;
+    width   : 100%;
+    left    : 0;
+    top     : 0;
+}
+#game
+{
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    
+    height : 100%;
+    width  : 100%;
+}
+
+.menu
+{
+    margin-bottom: 2%;
+    
+    background: rgb(156, 167, 152);
+    
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+    height : 13%;
+    width  : 80%;
+}
+.cells
+{
+    background: rgb(167, 162, 152);
+
+    display        : flex;
+    justify-content: center;
+
+    height : 73%;
+    width  : 80%;
+}
+
+.end_screen
+{
+    background: rgb(0, 0, 0);
+    color     : rgb(139, 0, 0);
+
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+    height: 100%;
+    width : 100%;
+}
+
+.win_screen
+{
+    background: rgb(0, 0, 0);
+    color     : rgb(0, 100, 0);
+
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+    height: 100%;
+    width : 100%;
+}
